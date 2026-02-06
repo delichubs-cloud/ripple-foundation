@@ -1,0 +1,76 @@
+# ============================================
+# Ripple Foundation - Docker Security .dockerignore
+# Prevents sensitive files from being copied into images
+# ============================================
+
+# Git
+.git
+.gitignore
+
+# Local environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+credentials/
+secrets/
+.keys/
+**/.ssh/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build
+.next/
+out/
+dist/
+
+# Node modules
+node_modules/
+
+# Database
+*.sqlite
+*.db
+*.sql
+
+# Backup
+*.backup
+*.bak
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Documentation
+docs/
+*.md
+
+# Config (include only needed ones)
+!docker-compose.yml
+!Dockerfile
+!.env.example

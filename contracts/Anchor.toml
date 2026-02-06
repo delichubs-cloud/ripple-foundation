@@ -1,0 +1,36 @@
+[package]
+name = "ripple-foundation"
+version = "0.1.0"
+description = "The Ripple Foundation - Solana Smart Contracts"
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+ripple_nft = "Rip1eZy3vJwF4HbSnF7QEZMVLiEiYym9VeZ3KiYoMMEq"
+ripple_membership = "Mem8erS7iP45R1NGrmVYs7eJ6MZYDJ1rG9qkNFYPfvE"
+
+[programs.devnet]
+ripple_nft = "YOUR_DEVNET_PROGRAM_ID"
+ripple_membership = "YOUR_DEVNET_PROGRAM_ID"
+
+[programs.mainnet-beta]
+ripple_nft = "YOUR_MAINNET_PROGRAM_ID"
+ripple_membership = "YOUR_MAINNET_PROGRAM_ID"
+
+[registry]
+address = "ripple.ripple-foundation"
+provider = "cluster"
+
+[idl]
+address = "Rip1eZy3vJwF4HbSnF7QEZMVLiEiYym9VeZ3KiYoMMEq"
+path = "target/idl/ripple_foundation.json"
+
+[test]
+startup_wait = 5000
+shutdown_wait = 2000
+validate_size = true
+
+[test.validator]
+url = "https://api.devnet.solana.com"

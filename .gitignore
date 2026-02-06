@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build
+target/
+*.so
+*.wasm
+
+# Local configs
+.env
+.env.local
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+coverage/
+
+# Keys
+*.json
+!package.json

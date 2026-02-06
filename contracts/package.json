@@ -1,0 +1,14 @@
+{
+  "name": "ripple-foundation-contracts",
+  "version": "0.1.0",
+  "description": "The Ripple Foundation - Solana Smart Contracts",
+  "scripts": {
+    "test": "anchor test",
+    "build": "anchor build",
+    "deploy": "anchor deploy"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.0",
+    "anchor-lang": "^0.29.0"
+  }
+}
